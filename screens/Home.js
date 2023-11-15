@@ -2,24 +2,24 @@ import React, { useState } from "react";
 import { View, SafeAreaView, FlatList } from "react-native";
 
 import { HomeHeader, FocusedStatusBar, CompanyCard } from "../components";
-import { COLORS, NFTData } from "../constants";
+import { COLORS, CompanyData } from "../constants";
 
 const Home = () => {
-  const [nftData, setNftData] = useState(NFTData);
+  const [companyData, setCompanyData] = useState(CompanyData);
 
   const handleSearch = (value) => {
     if (value.length === 0) {
-      setNftData(NFTData);
+      setCompanyData(CompanyData);
     }
 
-    const filteredData = NFTData.filter((item) =>
+    const filteredData = CompanyData.filter((item) =>
       item.name.toLowerCase().includes(value.toLowerCase())
     );
 
     if (filteredData.length === 0) {
-      setNftData(NFTData);
+      setCompanyData(CompanyData);
     } else {
-      setNftData(filteredData);
+      setCompanyData(filteredData);
     }
   };
 
@@ -29,7 +29,7 @@ const Home = () => {
       <View style={{ flex: 1 }}>
         <View style={{ zIndex: 0 }}>
           <FlatList
-            data={nftData}
+            data={companyData}
             renderItem={({ item }) => <CompanyCard data={item} />}
             keyExtractor={(item) => item.id}
             showsVerticalScrollIndicator={false}

@@ -97,7 +97,7 @@ export const EndDate = () => {
           color: COLORS.primary,
         }}
       >
-        Booking Open
+        Booking Status
       </Text>
       <Text
         style={{

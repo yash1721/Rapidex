@@ -1,5 +1,4 @@
 import badge from "../assets/icons/badge.png";
-import eth from "../assets/icons/eth.png";
 import heart from "../assets/icons/heart.png";
 import left from "../assets/icons/left.png";
 import rating from "../assets/icons/rating.png";
@@ -24,7 +23,6 @@ import person04 from "../assets/images/person04.png";
 
 export default {
   badge,
-  eth,
   rating,
   heart,
   left,

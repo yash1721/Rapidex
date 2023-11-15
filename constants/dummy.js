@@ -1,6 +1,6 @@
 import assets from "./assets";
 
-const NFTData = [
+const CompanyData = [
   {
     id: "NFT-01",
     name: "Carzonrent #312",
@@ -191,4 +191,4 @@ const NFTData = [
   },
 ];
 
-export { NFTData };
+export { CompanyData };
