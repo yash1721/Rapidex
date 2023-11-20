@@ -51,7 +51,7 @@ const DetailsBid = ({ bid }) => {
         </Text>
       </View>
 
-      <Rating rate={bid.price} />
+      <Rating rate={bid.rate} />
     </View>
   );
 };
