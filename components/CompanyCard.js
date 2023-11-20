@@ -57,7 +57,7 @@ const CompanyCard = ({ data }) => {
             alignItems: "center",
           }}
         >
-          <Rating rate={data.price} />
+          <Rating rate={data.rate} />
           <RectButton
             minWidth={120}
             fontSize={SIZES.font}

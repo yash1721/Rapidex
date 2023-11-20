@@ -28,7 +28,7 @@ export const CompanyTitle = ({ title, subTitle, titleSize, subTitleSize }) => {
   );
 };
 
-export const Rating = ({ price }) => {
+export const Rating = ({ rate }) => {
   return (
     <View style={{ flexDirection: "row", alignItems: "center" }}>
       <Image
@@ -43,7 +43,7 @@ export const Rating = ({ price }) => {
           color: COLORS.primary,
         }}
       >
-        {price}
+        {rate}
       </Text>
     </View>
   );
